@@ -1,0 +1,10 @@
+language: go
+
+script:
+    - export LD_LIBRARY_PATH=`pwd`
+    - make clean
+    - make all
+    - ./test
+
+notifications:
+    - email: false
